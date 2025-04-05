@@ -1,3 +1,4 @@
+import 'package:currencies/pages/overview.dart';
 import 'package:flutter/material.dart';
 import 'package:currencies/pages/home.dart';
 import 'package:currencies/pages/event.dart';
@@ -85,12 +86,12 @@ Future<Map<String, int>> fetchUserInventory(String username) async {
   }
 }
 
-List<String> globalCurrencies = [];
+// List<String> globalCurrencies = [];
 
-Future<void> fetchGlobalCurrencies() async {
-  final response = await http.get(Uri.parse('https://dair12.pythonanywhere.com/list_currencies/'));
-  globalCurrencies = List<String>.from(json.decode(response.body));
-}
+// Future<void> fetchGlobalCurrencies() async {
+//   final response = await http.get(Uri.parse('https://dair12.pythonanywhere.com/list_currencies/'));
+//   globalCurrencies = List<String>.from(json.decode(response.body));
+// }
 
 List<Map<String, dynamic>> globalTransactions = [];
 
@@ -168,19 +169,21 @@ Future<void> fetchGlobalInform() async {
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await fetchGlobalCurrencies();
+  // await fetchGlobalCurrencies();
   fetchUsers();
 
   runApp(MaterialApp(
+    
     debugShowCheckedModeBanner: false,
   initialRoute: '/',
   routes:{
-    '/':(context)=>Login(),
-    '/home':(context)=>Home(),
+    '/':(context)=>Information(),
+    // '/home':(context)=>Home(),
     '/event':(context)=>Event(),
-    '/currencyinf':(context)=>Currency(),
+    // '/currencyinf':(context)=>Currency(),
     '/information':(context)=>Information(),
     '/users':(context)=>Users(),
-    '/profile':(context)=>Profile()
+    '/profile':(context)=>Profile(),
+    '/overview':(context) =>Overview(), // Экран Overview
   },
 ));}

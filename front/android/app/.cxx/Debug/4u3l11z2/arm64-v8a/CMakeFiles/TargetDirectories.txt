@@ -1,0 +1,2 @@
+C:/Users/user/Desktop/Dair/currency/front/android/app/.cxx/Debug/4u3l11z2/arm64-v8a/CMakeFiles/edit_cache.dir
+C:/Users/user/Desktop/Dair/currency/front/android/app/.cxx/Debug/4u3l11z2/arm64-v8a/CMakeFiles/rebuild_cache.dir

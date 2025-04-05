@@ -32,6 +32,11 @@ dependencies:
     sdk: flutter
   http: ^1.0.0
   fl_chart: ^0.70.0
+  syncfusion_flutter_charts: ^29.1.35
+  syncfusion_flutter_pdf: ^29.1.35
+  path_provider: ^2.1.2
+  open_file: ^3.3.2
+  share_plus: ^7.2.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -54,6 +59,9 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
+  assets:
+    - assets/fonts/noto_sans.ttf
+
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
